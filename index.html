@@ -16,44 +16,119 @@
             box-sizing: border-box;
         }
         header {
-            backgound-color: (35,44,70)
-            background-image: url(./img/ia.jpg) 
+            background-color: (35,44,70);
+            background-image: url(./img/communication.jpg);
+            background-position:center;
+            background-position: cover;
+            color: #eeeeee;
+            padding: 30px;
         }
+        header h1 {
+            color:#eeeeee;
+            padding:30px;
+            text-align:center;
+        }
+        p {
+            color:black;
+            font-size: 10;
+        }
+        body {
+            background-image: linear-gradient(to left, rgb(69, 152, 152), teal, rgb(2, 42, 42));
+
+        }
+        h3{
+            text-decoration-line: underline;
+            color:black;
+        }
+
+        nav{
+            color:black;
+        }
+
+        header div {
+            display:inline-block;
+            width: 48%;
+        }
+
+        header div img {
+            width: 100;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 30px;
+            padding: 0px;
+        }
+
+        a:link, a:visited {
+            color:black;
+            text-align:right;
+            text-decoration:wavy;
+            display: inline-block;
+        }
+
+        a:hover, a:active {
+            background-color:gray;
+        }
+        
+        footer {
+            text-align: right;
+                }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(51, 51, 51);
+            color:black;
+            text-align: center;
+        }
+        
     </style>
 </head>
 
 <body>
     <header>
+        <div>
+
+            <image src="./img/perfil2.jpg" alt="foto perfil" height="60px"></image>
+        
+        </div>
+        
         <h1>Patrick Antunes</h1>
-        <p>Progamandor WEB</p>
-        <p>Rio de janerio, Brasil,<br> Belford Roxo</p>
-        <img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
+        <h4>Progamandor WEB<br>Belford Roxo<br> Rio de Janeiro, Brasil</h4>
+            <img src="./img/icons8-facebook-novo-128.png" alt="logo facebook - com link para rede social  da pessoa"
             height="30">
 
-        <img src="./img/icons8-instagram-128.png" alt="logo instagram - com link para rede social da pessoa"
+            <img src="./img/icons8-instagram-128.png" alt="logo instagram - com link para rede social da pessoa"
             height="30">
 
-        <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" height="30">
-    </header>
+            <img src="./img/icons8-twitter-128.png" alt="logo instagram - com link para rede social da pessoa" height="30">
+        
+        </header>
+        
+        <div class="topnav">
 
-    <nav>
-        Inicio   Projetos    Tecnologias
-    </nav>
+            <a href="#">Início</a>
+            <a href="#">Projetos</a>
+            <a href="#">Tecnologias</a>
+        </div>
+        
+    </ul>
 
     <section>
-        <h1>Projetos</h1>
+        <h3>Projetos</h3>
         <p>Curriculo</p>
         <p>Vidraçaria</p>
         <p>SPA</p>
     </section>
 
     <section>
-        <h1>Tecnologias</h1>
+        <h3>Tecnologias</h3>
         <p>HTTP, CSS, Javascript</p>
     </section>
 
     <footer>
-
+      <a href=https:"http://github.com/Antunespk" target:_top> Powered by  Antunespk</a>
     </footer>
 
 </body>
