@@ -10,6 +10,7 @@
     <title>Curriculo Fabiano</title>
 
     <style>
+        /* reset de estilo */
         * {
             margin: 0;
             padding: 0;
@@ -30,23 +31,59 @@
             color: rgb(242, 85, 85);
         }
 
-        /* header div {
-            display: inline-block;
-            width: 48%;
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        header>div>img {
+        #logo {
             width: 100%;
-        } */
+            float: left;
+        }
+
+        #logo img {
+            border-radius: 50%;
+        }
+
+        #dados {
+            width: 100%;
+            float: left;
+        }
+
+        .row {
+            display: table;
+            float: none;
+            content: "";
+            overflow: auto;
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #eeeeee;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #eeeeee;
+            color: black;
+        }
+
+        #projetos {
+            background-color: blue;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="row">
+        <div id="logo">
             <img src="https://avatars.githubusercontent.com/u/45884697?v=4" alt="foto do usuario">
         </div>
-        <div>
+        <div id="dados">
             <h1>Nome Completo</h1>
             <p>Progamandor WEB</p>
             <p>Rio de janerio, Brasil,<br> Campo Grande</p>
@@ -64,17 +101,17 @@
     </header>
 
     <nav>
-        <p>Inicio</p>
-        <p>Projetos</p>
-        <p>Empresa</p>
+        <a href="index.html">Inicio</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#empresas">Empresa</a>
     </nav>
 
-    <section>
+    <section id="projetos">
         <h1>Projetos</h1>
         <p>Casa Feliz</p>
     </section>
 
-    <section>
+    <section id="empresas">
         <h1>Empresas</h1>
         <p>Senac Rio</p>
     </section>
