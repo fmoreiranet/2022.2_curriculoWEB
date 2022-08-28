@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--https://pixabay.com-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,46 +10,81 @@
     <title>Currículo Paulo</title> 
 
 <style>
+    /* reset de estilo */
     * {
       margin: 0;
       padding: 0;
       box-sizing:border-box
     }
-    header{
-        background-color: blueviolet;
+    
+    header {
+        background-color:aqua;
         background-image: url(./img/electronics-gfc31b90ec_1920.jpg);
         background-position: center;
         background-size: cover;
-        color: #eeeeee;
+        color:#eeeeee;
         padding: 30px;
         text-align: center;
 
     }
-    header h1{
-        color: rgb(81, 226, 81);
+    header h1 {
+        color: rgb(242, 85, 85);
     }
-body {
-    font-family: Arial, Helvetica, sans-serif;
+
+    body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-    header div {
-        display: inline-block;
-        width: 48%;
-    }
-    
-    nav a {
-        display: inline-block;
-        padding: 10px 20px;
-        color: #eeeeee;
-        text-decoration: none;
-    }
+
+#logo {
+    width: 100%;
+    float: left
+}
+
+#logo img {
+    border-radius: 50%;
+}
+
+#dados {
+    width: 100%;
+    float: left;
+}
+
+.row {
+    display: table;
+    float: none;
+    content: "";
+    overflow: auto;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #eeeeee;
+    color: black;
+}
+
+#projetos {
+    background-color: blue;
+}
+
 </style>
 </head>
 
 <body>
-    <header>
+    <header class="row">
         <div id="logo">
             <img src="https://lh3.googleusercontent.com/ogw/AOh-ky0nsMOeZBHubwvu5wsX0Yq0Cr2CQ6DVgw2OL6W_jw=s32-c-mo" alt="foto do usuario">
         </div>
+        <div id="dados">
         
 
         <h1>Paulo Roberto Cezar de Araujo Filho</h1>
@@ -64,26 +100,17 @@ body {
 
      <nav>
         <a href="index.html">Início</a>
-        <a href="projetos">Projetos</a>
-        <a href="empresas">Empresas</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#empresas">Empresas</a>
      </nav>
-     
-        <nav>
-        <p>Formação em Letras Português/Literatura</p>
-        <p>Pós-graduação em Literatura Portuguesa</p>
-        <p>Empresa atual: SEEDUC RJ</p>
     
-    </nav>
-        <p>Curso Programador Web</p>
-        <p>Senac Rio</p>
-    
-        <section id="atividade">
-        <h1>Programador Free-lancer</h1>
-        <p>Full-stack</p>
-    
-    <section id="projetos">
+        <section id="projetos">
         <h1>Projetos</h1>
-        <p>Currículo</p>
+        <p>Casa Feliz</p>
+    
+    <section id="empresas">
+        <h1>Empresas</h1>
+        <p>Senac Rio</p>
     
     <footer>
         <p>Feito por: Paulo Araujo</p>
